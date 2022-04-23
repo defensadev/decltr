@@ -1,0 +1,38 @@
+{
+  "name": "decltr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node decltr/scripts/dist/start.js",
+    "build": "tsc --noEmit && node decltr/scripts/dist/build.js",
+    "scripts-build": "tsc --noEmit && esbuild decltr/scripts-build --outfile=decltr/scripts-build.js --format=cjs && node decltr/scripts-build.js"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-resolve": "^0.1.4",
+    "@swc/core": "^1.2.168",
+    "@types/archiver": "^5.3.1",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/fs-extra": "^9.0.13",
+    "@types/morgan": "^1.9.3",
+    "@types/needle": "^2.5.3",
+    "@types/node": "^17.0.24",
+    "@types/ws": "^8.5.3",
+    "archiver": "^5.3.1",
+    "chalk": "^5.0.1",
+    "chokidar": "^3.5.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "env-var": "^7.1.1",
+    "esbuild": "^0.14.36",
+    "express": "^4.17.3",
+    "fs-extra": "^10.1.0",
+    "lru-native2": "^1.2.5",
+    "morgan": "^1.10.0",
+    "qs": "^6.10.3",
+    "typescript": "^4.6.3",
+    "typescript-formatter": "^7.2.2",
+    "ws": "^8.5.0"
+  }
+}
